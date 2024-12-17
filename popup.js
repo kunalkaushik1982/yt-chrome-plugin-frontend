@@ -2,7 +2,7 @@ document.getElementById("sendRequest").addEventListener("click", async () => {
     const randomText = ["This is awesome!", "Not good at all!"][Math.floor(Math.random() * 2)];
   
     try {
-      const response = await fetch("http://localhost:5000/predict", {
+      const response = await fetch("http://10.102.180.0:5000/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
